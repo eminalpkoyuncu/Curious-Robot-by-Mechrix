@@ -91,7 +91,7 @@ Similar tutorail can be done with FRANKA EMIKA Panda robot.
 
 Useful link: https://ros-planning.github.io/moveit_tutorials/
 
-**3.2) ROS1 NOETIC real-time control for UR3e**
+**3.2) ROS1 Noetic real-time control for UR3e**
 
 a) To source ROS1 Noetic (It is important to do it every time while working with ROS)
 
@@ -145,7 +145,7 @@ cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
 ```
-**3.3) ROS2 FOXY DEMO simulation for UR3e**
+**3.3) ROS2 Foxy demo simulation for UR3e**
 
 As similar to ROS1 Noetic, ROS2 can be used to execute these practices. However, due to lack of sources, Python availability (it is only supporting C++ for controlling for now) and rapidly updating ROS2 versions it is not likely to have a stable working with ROS2 nowadays. Altough we started our studies with ROS2 Foxy which had LTS, ROS2 Humble becomes the new LTS version and availabilty of drivers have changed. The progress we made up to this point is provided as similar to previous tutorials.
 
@@ -166,7 +166,7 @@ cd ~/workspace/ros_ur_driver
 source install/setup.bash
 ros2 launch ur_bringup test_joint_trajectory_controller.launch.py
 ```
-**3.4) ROS2 FOXY real-time control for UR3e**
+**3.4) ROS2 Foxy real-time control for UR3e**
 
 a) To source ROS2 Foxy (It is important to do it every time while working with ROS)
 
@@ -199,7 +199,7 @@ cd ~/workspace/ros_ur_driver
 source install/setup.bash
 ros2 launch ur_bringup ur_moveit.launch.py ur_type:=ur3e robot_ip:= yyy.yyy.yyy.yyy use_fake_hardware:=true launch_rviz:=true
 ```
-Useful link: http://www.ritsumei.ac.jp/~kawamura/doc/ros2_ur.pdf
+Useful source PDF: http://www.ritsumei.ac.jp/~kawamura/doc/ros2_ur.pdf
 
 **4) Learning the basics of ROS**
 
@@ -225,9 +225,9 @@ HINT: IF you are working with python as did we, move group python interface is a
 
 **Appendix**
 
-Useful link python:	https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html
+Useful link for python interfacing:	https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html
 
-Useful link C++: https://ros-planning.github.io/moveit_tutorials/doc/move_group_interface/move_group_interface_tutorial.html
+Useful link for C++ interfacing: https://ros-planning.github.io/moveit_tutorials/doc/move_group_interface/move_group_interface_tutorial.html
 
 Useful UR3e control with ROS1 Kinect youtube video: https://www.youtube.com/watch?v=b7rGA-Zsl3I 
 

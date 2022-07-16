@@ -1,0 +1,8 @@
+prefix=/home/romerur30/catkin_ws/devel
+
+Name: deneme
+Description: Description of deneme
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

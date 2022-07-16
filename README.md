@@ -86,6 +86,8 @@ g) To run a Python code to directly control the robot (5th Terminal)
 cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
+rosrun hareket home.py
+rosrun hareket ettir.py
 ```
 Similar tutorail can be done with FRANKA EMIKA Panda robot.
 
@@ -144,6 +146,17 @@ g) To run a Python code to directly control the robot (5th Terminal)
 cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
+rosrun hareket home.py
+rosrun hareket ettir.py
+```
+h) To run a Python code to face tracking (5th Terminal)
+
+```
+cd ~/catkin_ws
+catkin_make
+source ~/catkin_ws/devel/setup.bash
+rosrun hareket home.py
+rosrun hareket li.py
 ```
 **3.3) ROS2 Foxy demo simulation for UR3e**
 

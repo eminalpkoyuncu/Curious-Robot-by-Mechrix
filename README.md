@@ -24,7 +24,7 @@ Useful link: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
 **3) Usage and test drive of the UR**
 
 Now that you successfully set up your UR ROS workspace you can run some test programs to move your robot following along the install page of the
-git hub. In the package, "ettir.py" consists of an UR3e application consisting of a collision check application with the physical workspace (consisting of a table, computer screen and gripper) whereas "li.py" consists of a face tracking application with image processing. "li.py" needs to be developed further and may not work as assumed. In order to use "li.py", an image data publisher Raspberry Pi is also needed and the details of the ROS application for this device is given in section 3.2. 
+git hub. In the package, "ettir.py" consists of an UR3e application consisting of a collision check application with the physical workspace (consisting of a table, computer screen and gripper) whereas "li.py" consists of a face tracking application with image processing. "li.py" needs to be developed further and may not work as assumed. In order to use "li.py", an image data publisher Raspberry Pi is also needed and the details of the ROS application for this device is given in section 3.2. Note that the package "cv_basics" is included for the trial purposes and you can check your communication between the computer and Raspberry Pi using that package. 
 
 HINT: Be careful while giving movement to the robot. Don't be afraid to smash the emergency button.
 
@@ -124,7 +124,7 @@ source ~/catkin_ws/devel/setup.bash
 rosrun rqt_joint_trajectory_controller rqt_joint_trajectory_controller
 ```
 
-e) To run the Moveit simulation (3rd Terminal)
+e) To run the Moveit simulation (2nd Terminal)
 
 ```
 cd ~/catkin_ws
@@ -132,7 +132,7 @@ source ~/catkin_ws/devel/setup.bash
 roslaunch ur3e_moveit_config ur3e_moveit_planning_execution.launch 
 ```
 
-f) To run the Rviz simulation (4th Terminal)
+f) To run the Rviz simulation (3rd Terminal)
 
 ```
 cd ~/catkin_ws
@@ -140,7 +140,7 @@ source ~/catkin_ws/devel/setup.bash
 roslaunch ur3e_moveit_config moveit_rviz.launch rvviz_config:=$(rospack find ur3e_moveit_config)/launch/moveit.rviz
 ```
 
-g) To run a Python code to directly control the robot (5th Terminal)
+g) To run a Python code to directly control the robot (4th Terminal)
 
 ```
 cd ~/catkin_ws
@@ -149,7 +149,13 @@ source ~/catkin_ws/devel/setup.bash
 rosrun hareket home.py
 rosrun hareket ettir.py
 ```
-h) To run a Python code to face tracking (5th Terminal)
+
+h) Set up Raspberry Pi 
+
+Assuming that the Raspberry Pi is booted for the first time and operating headless (without a monitor), the first step is to write the image of the operating system, which will run on the Raspberry Pi, to the SD card. Download "rpi-imager" software to your computer following the steps in this link: https://www.cyberithub.com/how-to-install-raspberry-pi-imager-on-ubuntu-20-04-lts/. After running "rpi-imager" select Ubuntu 20.04 Server as the operating system and write the image to the SD Card. You can refer to https://roboticsbackend.com/install-ubuntu-on-raspberry-pi-without-monitor/ for the headless setup of the Raspberry Pi. You should SSH into Raspberry Pi and install a desktop to the device after the setup is complete (xubuntu desktop is used during the project) for the image processing. After the desktop is installed, you should install xrdp for the remote desktop application (refer to https://tecadmin.net/how-to-install-xrdp-on-ubuntu-20-04/). After you install xrdp, you can access your Raspberry Pi desktop using a remote desktop provider such as "remmina" from your computer. When you reach your desktop environment, you should install ROS Noetic to your Raspberry Pi following the usual tutorial. For the application, OpenCV library should be installed to your Raspberry Pi (https://linuxize.com/post/how-to-install-opencv-on-ubuntu-20-04/). After the setup is complete, download "catkin_ws_rasp" folder to your Raspberry Pi device and copy the package to your workspace and build it. For the ROS communication between the Raspberry Pi and the ground station (main computer) follow the tutorial https://kashishdhal.me/ros-communication-between-different-computers/. Note that you can run the package "cv_basics" or "hareket li.py" on the main computer to subscribe to the Raspberry Pi. 
+
+
+i) To run a Python code to face tracking (4th Terminal on the Computer)
 
 ```
 cd ~/catkin_ws

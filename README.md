@@ -86,7 +86,6 @@ g) To run a Python code to directly control the robot (5th Terminal)
 cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
-
 ```
 Similar tutorail can be done with FRANKA EMIKA Panda robot.
 
@@ -200,6 +199,8 @@ cd ~/workspace/ros_ur_driver
 source install/setup.bash
 ros2 launch ur_bringup ur_moveit.launch.py ur_type:=ur3e robot_ip:= yyy.yyy.yyy.yyy use_fake_hardware:=true launch_rviz:=true
 ```
+Useful link: http://www.ritsumei.ac.jp/~kawamura/doc/ros2_ur.pdf
+
 **4) Learning the basics of ROS**
 
 In order to start moving your UR model freely with ROS you need to first familiarize yourself with the basics of ROS. Official tutorials for ROS
@@ -215,3 +216,27 @@ Useful link: http://wiki.ros.org/ROS/Tutorials
 Now that you have a basic understanding of how to use ROS you can should study the Moveit packages and try to understand how it works as most of your simple
 kinematic solver functions are made via Moveit. Reading up until "Move Group Interface" section of the official moveit tutorials should be enough to have a basic 
 understanding on the matter.
+
+**6) Writing your own UR ROS control package**
+
+Now you have almost all the tools you need to create and execute you own UR control packages. The section "Move Group Interface" has all the basic functions you might need. You can explore further how to effectively command this robot.
+
+HINT: IF you are working with python as did we, move group python interface is a crucial source of information since after that section rest of the tutorials are written in C++. Absorb as much information as you can from these tutorials and other peoples examples such as the package that we have written for our project.
+
+**Appendix**
+
+Useful link python:	https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html
+
+Useful link C++: https://ros-planning.github.io/moveit_tutorials/doc/move_group_interface/move_group_interface_tutorial.html
+
+Useful UR3e control with ROS1 Kinect youtube video: https://www.youtube.com/watch?v=b7rGA-Zsl3I 
+
+Useful UR3e control with ROS1 Noetic repo: https://github.com/cambel/ur3/tree/noetic-devel
+
+Useful UR3e control with ROS1 Noetic project and repo: 
+
+https://sir.upc.edu/projects/rostutorials/final_work/
+
+https://gitioc.upc.edu/rostutorials/ros2122-final-project
+
+Useful ROS learning textbook "A Gentle Introduction to ROS": https://www.cse.sc.edu/~jokane/agitr/

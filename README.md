@@ -31,7 +31,7 @@ HINT: Be careful while giving movement to the robot. Don't be afraid to smash th
 Useful link: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver/blob/master/ur_robot_driver/doc/usage_example.md
   
 
-**3.1) ROS1 NOETIC SIMULATION for UR3e**
+**3.1) ROS1 Noetic simulation for UR3e**
 
 Previous link is summarized as
 
@@ -91,7 +91,7 @@ Similar tutorail can be done with FRANKA EMIKA Panda robot.
 
 Useful link: https://ros-planning.github.io/moveit_tutorials/
 
-**3.2) ROS1 NOETIC REAL-TIME CONTROL for UR3e**
+**3.2) ROS1 NOETIC real-time control for UR3e**
 
 a) To source ROS1 Noetic (It is important to do it every time while working with ROS)
 
@@ -145,7 +145,7 @@ cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
 ```
-**3.3) ROS2 FOXY DEMO SIMULATION for UR3e**
+**3.3) ROS2 FOXY DEMO simulation for UR3e**
 
 As similar to ROS1 Noetic, ROS2 can be used to execute these practices. However, due to lack of sources, Python availability (it is only supporting C++ for controlling for now) and rapidly updating ROS2 versions it is not likely to have a stable working with ROS2 nowadays. Altough we started our studies with ROS2 Foxy which had LTS, ROS2 Humble becomes the new LTS version and availabilty of drivers have changed. The progress we made up to this point is provided as similar to previous tutorials.
 
@@ -166,7 +166,7 @@ cd ~/workspace/ros_ur_driver
 source install/setup.bash
 ros2 launch ur_bringup test_joint_trajectory_controller.launch.py
 ```
-**3.4) ROS2 FOXY REAL-TIME CONTROL for UR3e**
+**3.4) ROS2 FOXY real-time control for UR3e**
 
 a) To source ROS2 Foxy (It is important to do it every time while working with ROS)
 

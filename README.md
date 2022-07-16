@@ -225,13 +225,21 @@ HINT: IF you are working with python as did we, move group python interface is a
 
 **Appendix**
 
-Useful link for python interfacing:	https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html
+Useful link for python interfacing:	
 
-Useful link for C++ interfacing: https://ros-planning.github.io/moveit_tutorials/doc/move_group_interface/move_group_interface_tutorial.html
+https://ros-planning.github.io/moveit_tutorials/doc/move_group_python_interface/move_group_python_interface_tutorial.html
 
-Useful UR3e control with ROS1 Kinect youtube video: https://www.youtube.com/watch?v=b7rGA-Zsl3I 
+Useful link for C++ interfacing: 
 
-Useful UR3e control with ROS1 Noetic repo: https://github.com/cambel/ur3/tree/noetic-devel
+https://ros-planning.github.io/moveit_tutorials/doc/move_group_interface/move_group_interface_tutorial.html
+
+Useful UR3e control with ROS1 Kinect youtube video: 
+
+https://www.youtube.com/watch?v=b7rGA-Zsl3I 
+
+Useful UR3e control with ROS1 Noetic repo: 
+
+https://github.com/cambel/ur3/tree/noetic-devel
 
 Useful UR3e control with ROS1 Noetic project and repo: 
 
@@ -239,4 +247,6 @@ https://sir.upc.edu/projects/rostutorials/final_work/
 
 https://gitioc.upc.edu/rostutorials/ros2122-final-project
 
-Useful ROS learning textbook "A Gentle Introduction to ROS": https://www.cse.sc.edu/~jokane/agitr/
+Useful ROS learning textbook "A Gentle Introduction to ROS": 
+
+https://www.cse.sc.edu/~jokane/agitr/

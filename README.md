@@ -3,9 +3,11 @@
 ROS1 NOETIC SIMULATION for UR3e
 
 1) To source ROS1 Noetic (It is important to do it every time while working with ROS)
-''''
+
+'''
 source /opt/ros/noetic/setup.bash
-''''
+'''
+
 2) To run the  Universal Robot ROS packages for UR3e robot, changing the directory to that specific workspace and sourcing it should be done.
 
 cd ~/catkin_ws

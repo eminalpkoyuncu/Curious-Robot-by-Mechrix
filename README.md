@@ -24,7 +24,7 @@ Useful link: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
 **3) Usage and test drive of the UR**
 
 Now that you successfully set up your UR ROS workspace you can run some test programs to move your robot following along the install page of the
-git hub.
+git hub. In the package, "ettir.py" consists of an UR3e application consisting of a collision check application with the physical workspace (consisting of a table, computer screen and gripper) whereas "li.py" consists of a face tracking application with image processing. "li.py" needs to be developed further and may not work as assumed. In order to use "li.py", an image data publisher Raspberry Pi is also needed and the details of the ROS application for this device is given in section 3.2. 
 
 HINT: Be careful while giving movement to the robot. Don't be afraid to smash the emergency button.
 

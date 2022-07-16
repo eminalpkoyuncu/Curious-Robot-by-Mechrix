@@ -200,3 +200,18 @@ cd ~/workspace/ros_ur_driver
 source install/setup.bash
 ros2 launch ur_bringup ur_moveit.launch.py ur_type:=ur3e robot_ip:= yyy.yyy.yyy.yyy use_fake_hardware:=true launch_rviz:=true
 ```
+**4) Learning the basics of ROS**
+
+In order to start moving your UR model freely with ROS you need to first familiarize yourself with the basics of ROS. Official tutorials for ROS
+is a great place to start learning.
+
+HINT: Before getting into creating your own ROS packages to control UR you should have at least followed the beginner level ROS tutorials until "Writing a simple
+publisher and subscriber". 
+
+Useful link: http://wiki.ros.org/ROS/Tutorials
+
+**5) Learning the basics of Moveit**
+
+Now that you have a basic understanding of how to use ROS you can should study the Moveit packages and try to understand how it works as most of your simple
+kinematic solver functions are made via Moveit. Reading up until "Move Group Interface" section of the official moveit tutorials should be enough to have a basic 
+understanding on the matter.

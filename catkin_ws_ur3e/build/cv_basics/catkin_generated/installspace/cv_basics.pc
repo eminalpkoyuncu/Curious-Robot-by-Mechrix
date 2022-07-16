@@ -1,8 +1,0 @@
-prefix=/home/romerur30/catkin_ws/install
-
-Name: cv_basics
-Description: Description of cv_basics
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

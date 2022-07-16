@@ -1,8 +1,0 @@
-prefix=/home/romerur30/catkin_ws/devel
-
-Name: hareket
-Description: Description of hareket
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

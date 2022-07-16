@@ -148,7 +148,9 @@ source ~/catkin_ws/devel/setup.bash
 ```
 **3.3) ROS2 FOXY DEMO SIMULATION for UR3e**
 
-1) To connect the UR3e robot with Rviz via computer in a simulated environment  (1st Terminal)
+As similar to ROS1 Noetic, ROS2 can be used to execute these practices. However, due to lack of sources, Python availability (it is only supporting C++ for controlling for now) and rapidly updating ROS2 versions it is not likely to have a stable working with ROS2 nowadays. Altough we started our studies with ROS2 Foxy which had LTS, ROS2 Humble becomes the new LTS version and availabilty of drivers have changed. The progress we made up to this point is provided as similar to previous tutorials.
+
+a) To connect the UR3e robot with Rviz via computer in a simulated environment  (1st Terminal)
 
 ```
 export COLCON_WS=~/workspace/ros_ur_driver
@@ -157,7 +159,7 @@ source install/setup.bash
 ros2 launch ur_bringup ur_control.launch.py ur_type:=ur3e robot_ip:=yyy.yyy.yyy.yyy use_fake_hardware:=true launch_rviz:=true
 ```
 
-2) To run the provided demo (2nd Terminal)
+b) To run the provided demo (2nd Terminal)
 
 ```
 export COLCON_WS=~/workspace/ros_ur_driver
@@ -165,23 +167,15 @@ cd ~/workspace/ros_ur_driver
 source install/setup.bash
 ros2 launch ur_bringup test_joint_trajectory_controller.launch.py
 ```
+**3.4) ROS2 FOXY REAL-TIME CONTROL for UR3e**
 
-
-
-
-
-
-
-
-ROS2 FOXY REAL-TIME CONTROL for UR3e
-
-1) To source ROS2 Foxy (It is important to do it every time while working with ROS)
+a) To source ROS2 Foxy (It is important to do it every time while working with ROS)
 
 ```
 source /opt/ros/foxy/setup.bash
 ```
 
-2) To run the  Universal Robot ROS packages for UR3e robot, changing the directory to that specific workspace, exporting and sourcing it should be done.
+b) To run the  Universal Robot ROS packages for UR3e robot, changing the directory to that specific workspace, exporting and sourcing it should be done.
 
 ```
 export COLCON_WS=~/workspace/ros_ur_driver
@@ -189,7 +183,7 @@ cd ~/workspace/ros_ur_driver
 source install/setup.bash
 ```
 
-3) To connect the UR3e robot with Rviz via computer to controlling the real robot (1st Terminal) 
+c) To connect the UR3e robot with Rviz via computer to controlling the real robot (1st Terminal) 
 
 ```
 export COLCON_WS=~/workspace/ros_ur_driver
@@ -198,7 +192,7 @@ source install/setup.bash
 ros2 launch ur_bringup ur_control.launch.py ur_type:=ur3e robot_ip:=yyy.yyy.yyy.yyy use_fake_hardware:=true launch_rviz:=false
 ```
 
-4) To start Moveit (2nd Terminal)
+d) To start Moveit (2nd Terminal)
 
 ```
 export COLCON_WS=~/workspace/ros_ur_driver
